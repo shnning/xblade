@@ -1,0 +1,40 @@
+{
+  "name": "xblade",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "rollup -c -w",
+    "examples:start": "run-p start:*",
+    "examples:install": "run-s install:*",
+    "start:entry": "cd examples/entry && npm start",
+    "start:react18": "cd examples/react18 && npm start",
+    "start:vue3": "cd examples/vue3 && npm run serve",
+    "install:entry": "cd examples/entry && npm i",
+    "install:react18": "cd examples/react18 && npm i",
+    "install:vue3": "cd examples/vue3 && npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.72.1",
+    "rollup-plugin-import-css": "^3.0.3",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@sh.ning/import-html-entry": "^1.0.1"
+  }
+}

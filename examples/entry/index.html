@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="./blade.js"></script> -->
+  <script src="dist/main.js" type="module"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .entry-nav {
+      flex-basis: 200px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .entry-nav::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      height: 100px;
+      width: 2px;
+      background-color: #aaa;
+    }
+
+    .entry-nav a {
+      font-size: 26px;
+      text-decoration: none;
+      color: #aaa;
+    }
+
+    .entry-nav a:hover {
+      color: #000;
+    }
+
+    .entry-title {
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    .entry-content {
+      flex: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="entry-nav">
+      <div class="entry-title">Blade</div>
+      <!-- <div class="entry-nav-react18">react18</div>
+      <div class="entry-nav-vue3">vue3</div> -->
+      <a href="/react18">react18</a>
+      <a href="/vue3">vue3</a>
+    </nav>
+    <div class="entry-content" id="root">
+      <!-- <blade-app src="http://localhost:8001/" style="width: 100%; height: 1000px"></blade-app>
+      <blade-app src="http://localhost:8002/" style="width: 100%; height: 800px"></blade-app> -->
+    </div>
+  </div>
+</body>
+
+</html>
